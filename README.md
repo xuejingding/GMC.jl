@@ -52,7 +52,7 @@ println("GMC(X|Y) = ", gmc_xy)
 ## Example: Feature Selection
 
 ```julia
-using GMC
+using GMCMeasure
 using Random
 
 # Generate data with multiple predictors
