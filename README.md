@@ -1,26 +1,27 @@
-# GMC.jl
+# GMCMeasure.jl
 
-[![Build Status](https://github.com/username/GMC.jl/workflows/CI/badge.svg)](https://github.com/username/GMC.jl/actions)
+[![Build Status](https://github.com/xuejingding/GMCMeasure.jl/workflows/CI/badge.svg))](https://github.com/xuejingding/GMCMeasure.jl/actions)
 
 A Julia package for computing the Generalized Measure of Correlation (GMC), a dependence measure that accounts for nonlinearity and asymmetry in the relationship between variables.
 
 ## Installation
 
+Once registered (after 3 days), install with:
 ```julia
 using Pkg
-Pkg.add("GMC")
+Pkg.add("GMCMeasure")
 ```
 
-Or in development mode:
+Currently in registration, you can install from GitHub:
 ```julia
 using Pkg
-Pkg.develop(path="/path/to/GMC.jl")
+Pkg.add(url="https://github.com/xuejingding/GMCMeasure.jl")
 ```
 
 ## Quick Start
 
 ```julia
-using GMC
+using GMCMeasure
 using Random
 
 # Generate sample data
@@ -43,6 +44,10 @@ println("GMC(X|Y) = ", gmc_xy)
 - **GMC_Y_given_X(X, Y)**: Compute GMC(Y|X)
 - **GMC_X_given_Y(X, Y)**: Compute GMC(X|Y)  
 - **GMC_feature_ranking(X, Y)**: Rank features by GMC scores
+- Computes Generalized Measure of Correlation
+- Handles nonlinear relationships
+- Accounts for asymmetry in variable relationships
+- Efficient implementation using kernel density estimation
 
 ## Example: Feature Selection
 
@@ -84,6 +89,18 @@ This measure:
 ## References
 
 Zheng, S., Shi, N.Z., & Zhang, Z. (2012). Generalized Measures of Correlation for Asymmetry, Nonlinearity, and Beyond. *Journal of the American Statistical Association*, 107(499), 1239-1252.
+
+## Citation
+
+If you use GMCMeasure.jl in your research, please cite:
+```bibtex
+@software{GMCMeasure_jl,
+  author = {Ding, Xuejing and Zhang, Zhengjun},
+  title = {GMCMeasure.jl: Generalized Measure of Correlation},
+  year = {2025},
+  url = {https://github.com/xuejingding/GMCMeasure.jl}
+}
+```
 
 ## License
 
