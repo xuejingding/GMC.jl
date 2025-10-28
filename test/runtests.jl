@@ -1,4 +1,4 @@
-using GMC
+using GMCMeasure
 using Test
 using Random
 
