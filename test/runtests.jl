@@ -2,7 +2,7 @@ using GMCMeasure
 using Test
 using Random
 
-@testset "GMC.jl" begin
+@testset "GMCMeasure.jl" begin
     # Set seed for reproducibility
     Random.seed!(123)
     
