@@ -6,16 +6,10 @@ A Julia package for computing the Generalized Measure of Correlation (GMC), a de
 
 ## Installation
 
-Once registered (after 3 days), install with:
+Install with:
 ```julia
 using Pkg
 Pkg.add("GMCMeasure")
-```
-
-Currently in registration, you can install from GitHub:
-```julia
-using Pkg
-Pkg.add(url="https://github.com/xuejingding/GMCMeasure.jl")
 ```
 
 ## Quick Start
@@ -26,7 +20,7 @@ using Random
 
 # Generate sample data
 Random.seed!(123)
-n = 1000
+n = 50000
 X = randn(n)
 Y = 2 * X + 0.5 * randn(n)
 
@@ -57,7 +51,7 @@ using Random
 
 # Generate data with multiple predictors
 Random.seed!(123)
-n = 500
+n = 5000
 X1 = randn(n)
 X2 = randn(n) 
 X3 = randn(n)
